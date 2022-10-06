@@ -1,13 +1,21 @@
-import React from 'react';
+import React, {Suspense} from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const AppLazy = React.lazy(()=>import('./App'))
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap');
+    </style>
+    <Suspense fallback={<div>Loading...</div>}>
+      <AppLazy/>
+    </Suspense>
+    {/* <App /> */}
   </React.StrictMode>
 );
 
