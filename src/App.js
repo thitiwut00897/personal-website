@@ -52,11 +52,14 @@ function App() {
             </div>
             <div className='wrapperbox'>
               <div className='paperBox'>
-                <div className='itempaper'><img src={facebook} className="social" alt="logo" /></div>
+              <a href="https://www.facebook.com/thitiwut.phophan/">
+                <div className='itempaper'><img src={facebook} className="social" alt="logo" /></div></a>
                 <div className='line'></div>
-                <div className='itempaper'><img src={instagram} className="social" alt="logo" /></div>
+              <a href="https://www.instagram.com/ne1m_m/">
+                <div className='itempaper'><img src={instagram} className="social" alt="logo" /></div></a>
                 <div className='line'></div>
-                <div className='itempaper'><img src={github} className="social" alt="logo" /></div>
+              <a href="https://github.com/thitiwut00897">
+                <div className='itempaper'><img src={github} className="social" alt="logo" /></div></a>
                 <div className='line'></div>
                 <div className='itempaper'><h3>62 หลวงแพ่ง4 ลาดกระบัง 10520</h3></div>
                 {/* <div className='line'></div>
